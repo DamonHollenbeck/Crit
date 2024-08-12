@@ -1,5 +1,5 @@
 # Crit
 ## A submission for Gemini API competition
 
-#An Art School in your pocket
+An Art School in your pocket
  
