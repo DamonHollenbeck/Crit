@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1083184513067",
+    "project_id": "artteacher-d355a",
+    "storage_bucket": "artteacher-d355a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083184513067:android:74af2dda60e7d4f10f6a6e",
+        "android_client_info": {
+          "package_name": "com.artteacher.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANyiPnBlHW23FtaoCRgSX39S_iVXvE7OI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083184513067:android:5fa8c91f9a7c3fa60f6a6e",
+        "android_client_info": {
+          "package_name": "com.artteacher.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANyiPnBlHW23FtaoCRgSX39S_iVXvE7OI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
