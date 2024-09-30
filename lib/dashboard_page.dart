@@ -63,9 +63,10 @@ class _DashboardPageState extends State<DashboardPage> {
 
   Future<void> _signOut() async {
     await FirebaseAuth.instance.signOut();
-    Navigator.pushReplacement(
+    Navigator.pushAndRemoveUntil(
       context,
       MaterialPageRoute(builder: (context) => LoginPage()),
+      (Route<dynamic> route) => false,
     );
   }
 
@@ -74,7 +75,7 @@ class _DashboardPageState extends State<DashboardPage> {
     if (_currentUser == null) {
       return Scaffold(
         appBar: AppBar(
-          title: Text('Dashboard'),
+          title: Text('CRIT History'),
         ),
         body: Center(
           child: Text('No user logged in'),
@@ -83,7 +84,7 @@ class _DashboardPageState extends State<DashboardPage> {
     }
     return Scaffold(
       appBar: AppBar(
-        title: Text('Dashboard'),
+        title: Text('CRIT History'),
         actions: [
           Padding(
             padding: const EdgeInsets.only(
@@ -109,7 +110,7 @@ class _DashboardPageState extends State<DashboardPage> {
                       context,
                       MaterialPageRoute(
                         builder: (context) => HomePage(
-                          chat: chat['fullChat']!,
+                          oldChat: chat['fullChat']!,
                           url: imageUrl,
                         ),
                       ),

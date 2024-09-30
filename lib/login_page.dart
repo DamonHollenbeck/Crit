@@ -88,24 +88,26 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           children: [
             SvgPicture.asset(
-              'crit.svg',
+              'assets/images/crit.svg',
               height: 100.0,
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             TextField(
               controller: _emailController,
-              decoration: InputDecoration(labelText: 'Email'),
+              decoration: const InputDecoration(labelText: 'Email'),
             ),
+            const SizedBox(height: 20),
             TextField(
               controller: _passwordController,
-              decoration: InputDecoration(labelText: 'Password'),
+              decoration: const InputDecoration(labelText: 'Password'),
               obscureText: true,
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: _login,
-              child: Text('Login'),
+              child: const Text('Login'),
             ),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushReplacement(
@@ -114,8 +116,21 @@ class _LoginPageState extends State<LoginPage> {
                       builder: (context) => RegistrationPage(tempId: tempUser)),
                 );
               },
-              child: Text('Register'),
+              child: const Text('Register'),
             ),
+            const SizedBox(height: 20),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/forgot-password');
+              },
+              child: const Text(
+                'Forgot password?',
+                style: TextStyle(
+                  color: Colors.blue,
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+            )
           ],
         ),
       ),

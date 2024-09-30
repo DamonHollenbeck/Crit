@@ -1,1 +1,48 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"artteacher-d355a","appId":"1:1083184513067:android:74af2dda60e7d4f10f6a6e","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"artteacher-d355a","configurations":{"android":"1:1083184513067:android:74af2dda60e7d4f10f6a6e","ios":"1:1083184513067:ios:f6cdfdd0df1150420f6a6e","web":"1:1083184513067:web:b5e99f541355d6610f6a6e"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "artteacher-d355a",
+          "appId": "1:1083184513067:android:74af2dda60e7d4f10f6a6e",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "artteacher-d355a",
+          "configurations": {
+            "android": "1:1083184513067:android:74af2dda60e7d4f10f6a6e",
+            "ios": "1:1083184513067:ios:f6cdfdd0df1150420f6a6e",
+            "web": "1:1083184513067:web:b5e99f541355d6610f6a6e"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(svg)",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          },
+          {
+            "key": "Content-Type",
+            "value": "image/svg+xml"
+          }
+        ]
+      }
+    ]
+  }
+}
